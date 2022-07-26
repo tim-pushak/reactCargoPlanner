@@ -15,7 +15,7 @@ function App() {
                 <section class="main__header_wrap">
                   <div class="main__header_h1">
                     <h1>Cargo Planner</h1>
-                  </div>
+                  </div> 
                   <div class="searchBar">
                     <form id="searchbar" action="#">
                       <input class="searchbar_input" type="text" placeholder="Search"/>
