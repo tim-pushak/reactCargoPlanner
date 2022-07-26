@@ -107,6 +107,11 @@ body {
   flex-direction: row;
 }
 
+.scrollBar1 {
+  overflow-y:scroll; 
+  height:553px;
+}
+
 .scrollBar1 div {
   margin-top: 30px;
 }
