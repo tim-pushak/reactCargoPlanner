@@ -1,0 +1,76 @@
+
+/* MAIN HEADER */
+
+.main__header {
+    padding: 15px 10px;
+    border-bottom: 2px solid;
+    background-color: rgba(138, 138, 138, 1);
+  }
+  .main__header_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .searchbar_input {
+    width: 500px;
+    border-radius: 50px;
+    padding: 10px;
+    border: 2px solid;
+  }
+  
+  .searchbar_input:hover {
+    border: 2px solid #fff;
+  }
+  
+  
+  .btns {
+    font-family: 'Montserrat', sans-serif;
+  
+    border: none;
+    border-radius: 50px;
+  }
+  
+  
+  .load_btn {
+    padding: 15px 30px;
+    margin-right: 20px;
+    border: 2px solid;
+  }
+  
+  .load_btn:hover {
+    background-color: rgb(182, 182, 182);
+    transition: 0.2s ease;
+    border-color: #fff;
+  }
+  
+  .load_btn:active {
+    background-color: rgb(43, 43, 43);
+    color: #fff;
+    transition: 0.1s ease;
+    border-color: #000;
+  }
+  
+  .save_btn {
+    padding: 15px 20px;
+    margin-left: 20px;
+    
+    background-color: rgb(3, 46, 175);
+    color: #fff;
+    border: 2px solid rgb(24, 56, 153);
+  }
+  
+  .save_btn:hover {
+    background-color:rgb(16, 66, 216);
+    color: #fff;
+    border-color: #fff;
+    transition: 0.2s;
+  }
+  .save_btn:active {
+    background-color: royalblue;
+    border-color: #000;
+    color: #000;
+    transition: 0.1s;
+  }
+  
