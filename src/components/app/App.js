@@ -2,6 +2,7 @@ import './App.css';
 import Shipment from '../dataCompanies/shipment.json';
 import Header from '../header/header';
 import Footer from '../footer/footer';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 
 
@@ -10,8 +11,9 @@ function App() {
     <div className="App">
       <Header/>
       {
-        Shipment.map(shipment => {
+      Shipment && Shipment.map(shipment => {
           return (
+            
             <div className="box" key={shipment.id}>
               <main className="containerr">
               
