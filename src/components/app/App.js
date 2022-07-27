@@ -5,6 +5,7 @@ import Footer from '../footer/footer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import Layout from '../../pages/layout';
+import Home from '../../pages/home';
 import Apple from '../../pages/apple';
 import Walmart from '../../pages/walmart';
 import ExxonMobil from '../../pages/exxonMobil';
@@ -20,9 +21,10 @@ function App() {
             <BrowserRouter>
             <Routes>
               <Route path="/" element={<Layout />}>
-                <Route index element={<Walmart />} />
-                <Route path="apple" element={<Apple />} />
+                <Route index element={<Home />} />
+                <Route path="walmart" element={<Walmart />} />
                 <Route path="exxonMobil" element={<ExxonMobil />} />
+                <Route path="apple" element={<Apple />} />
               </Route>
             </Routes>
           </BrowserRouter>
