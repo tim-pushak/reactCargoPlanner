@@ -20,9 +20,15 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+li {
+  list-style: none;
+}
 
-
-
+.react_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 
 /* CONTAINER */
@@ -35,16 +41,11 @@ body {
 .scrollBar1 {
   overflow-y:scroll; 
   height:553px;
+  width:200px;
 }
 
 .scrollBar1 div {
   margin-top: 30px;
-}
-.scrollBar1 p {
-  padding: 1px 30px;
-}
-.scrollBar1 p {
-  padding: 1px 30px;
 }
 
 .company_details {
