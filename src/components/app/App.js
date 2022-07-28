@@ -1,5 +1,5 @@
 import './App.css';
-import Shipment from '../dataCompanies/shipment.json';
+/* import Shipment from '../dataCompanies/shipment.json'; */
 import Header from '../header/header';
 import Footer from '../footer/footer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
@@ -9,6 +9,7 @@ import Home from '../../pages/home';
 import Apple from '../../pages/apple';
 import Walmart from '../../pages/walmart';
 import ExxonMobil from '../../pages/exxonMobil';
+import Detailsforrest from '../../pages/detailsForRest';
 
 
 function App() {
@@ -18,19 +19,20 @@ function App() {
       <main className="containerr">
         <section className="scrollBar2 companies react_wrapper">
           
-            <BrowserRouter>
+          <BrowserRouter>
             <Routes>
               <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route path="walmart" element={<Walmart />} />
                 <Route path="exxonMobil" element={<ExxonMobil />} />
                 <Route path="apple" element={<Apple />} />
+                <Route path="detailsforrest" element={<Detailsforrest />} />
               </Route>
             </Routes>
           </BrowserRouter>
         
-      </section>
-    </main>
+        </section>
+      </main>
 
      {/*  {
       Shipment && Shipment.map(shipment => {

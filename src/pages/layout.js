@@ -1,4 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
+import Shipment from '../components/dataCompanies/shipment.json';
 
 const Layout = () => {
   return (
@@ -13,6 +14,16 @@ const Layout = () => {
           </li> 
           <li>
             <p><Link to="/apple">Apple</Link></p>
+          </li>
+          <li>
+              {
+                Shipment && Shipment.map(shipment => {
+                    return (
+                    <p key={shipment.id}><Link to={shipment.name}>{shipment.name}</Link></p>
+                    )
+                })
+              }
+            
           </li>
         </ul>
       </nav>
