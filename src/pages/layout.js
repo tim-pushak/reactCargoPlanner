@@ -15,12 +15,12 @@ const Layout = () => {
           <li>
             <p><Link to="/apple">Apple</Link></p>
           </li>
-          <li>
+          <li class="linksjson">
               {
                 Shipment && Shipment.map(shipment => {
-                    return (
+                  return (
                     <p key={shipment.id}><Link to={shipment.name}>{shipment.name}</Link></p>
-                    )
+                  )
                 })
               }
             

@@ -1,5 +1,5 @@
 import './App.css';
-/* import Shipment from '../dataCompanies/shipment.json'; */
+import Shipment from '../dataCompanies/shipment.json';
 import Header from '../header/header';
 import Footer from '../footer/footer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
@@ -18,7 +18,6 @@ function App() {
       <Header/>
       <main className="containerr">
         <section className="scrollBar2 companies react_wrapper">
-          
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Layout />}>
@@ -30,7 +29,6 @@ function App() {
               </Route>
             </Routes>
           </BrowserRouter>
-        
         </section>
       </main>
 

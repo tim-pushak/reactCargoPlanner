@@ -19,7 +19,7 @@ const Apple = () => {
                     <p>Cargo boxes</p>
                     <input type="text" value="9.6,3.5"></input>
                 </div>
-            </section>     
+            </section>
         </main>
     )
 }
