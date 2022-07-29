@@ -17,7 +17,7 @@ const Walmart = () => {
                 </div>
                 <div className="cargo_boxes">
                     <p>Cargo boxes</p>
-                    <input type="text" value="3.3,3,3.2,1.6,5.4,2.1,2.7,4.6"></input>
+                    <input type="text" defaultValue="3.3,3,3.2,1.6,5.4,2.1,2.7,4.6"></input>
                 </div>
             </section>     
         </main>

@@ -1,6 +1,6 @@
 import './App.css';
 import Shipment from '../dataCompanies/shipment.json';
-import Header from '../header/header';
+
 import Footer from '../footer/footer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -15,8 +15,8 @@ import Detailsforrest from '../../pages/detailsForRest';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <main className="containerr">
+     
+
         <section className="scrollBar2 companies react_wrapper">
           <BrowserRouter>
             <Routes>
@@ -30,7 +30,7 @@ function App() {
             </Routes>
           </BrowserRouter>
         </section>
-      </main>
+
 
      {/*  {
       Shipment && Shipment.map(shipment => {

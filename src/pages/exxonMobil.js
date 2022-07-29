@@ -17,7 +17,7 @@ const ExxonMobil = () => {
                 </div>
                 <div className="cargo_boxes">
                     <p>Cargo boxes</p>
-                    <input type="text" value=""></input>
+                    <input type="text" defaultValue=""></input>
                 </div>
             </section>     
         </main>

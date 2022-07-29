@@ -51,6 +51,29 @@
     transition: 0.1s ease;
     border-color: #000;
   }
+
+  .bg-salmon {
+    color: red;
+  }
+
+  .hide_btn {
+    padding: 15px 30px;
+    margin-right: 20px;
+    border: 2px solid;
+  }
+  
+  .hide_btn:hover {
+    background-color: rgb(182, 182, 182);
+    transition: 0.2s ease;
+    border-color: #fff;
+  }
+  
+  .hide_btn:active {
+    background-color: rgb(43, 43, 43);
+    color: #fff;
+    transition: 0.1s ease;
+    border-color: #000;
+  }
   
   .save_btn {
     padding: 15px 20px;

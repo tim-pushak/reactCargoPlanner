@@ -24,7 +24,7 @@ const Detailsforrest = () => {
                                     </div>
                                     <div className="cargo_boxes">
                                         <p>Cargo boxes</p>
-                                        <input type="text" value={shipment.boxes}></input>
+                                        <input type="text" defaultValue={shipment.boxes}></input>
                                     </div>
                                 </section>     
                             )

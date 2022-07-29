@@ -2,7 +2,7 @@ import React from 'react';
 
 const Apple = () => {
     return (
-        <main className="containerr">
+        
             <section className="scrollBar2 company_details">
                 <div className="company_title">
                     <h1>Apple</h1>
@@ -17,10 +17,10 @@ const Apple = () => {
                 </div>
                 <div className="cargo_boxes">
                     <p>Cargo boxes</p>
-                    <input type="text" value="9.6,3.5"></input>
+                    <input type="text" defaultValue="9.6,3.5"></input>
                 </div>
             </section>
-        </main>
+        
     )
 }
 

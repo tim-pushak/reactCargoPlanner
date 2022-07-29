@@ -20,6 +20,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.App {
+  display: flex;
+}
+
 li {
   list-style: none;
 }
@@ -29,6 +33,15 @@ li {
   flex-direction: row;
   justify-content: center;
 }
+
+.linksjson {
+  display: none;
+}
+
+.linksjsonActive {
+  display: block;
+}
+
 
 
 /* CONTAINER */
@@ -49,6 +62,8 @@ li {
 }
 
 .company_details {
+  display: flex;
+  flex-direction: column;
   padding: 40px 40px;
 
   font-size: 25px;
