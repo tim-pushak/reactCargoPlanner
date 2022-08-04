@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import Shipment from '../components/dataCompanies/shipment.json';
+import Shipment from '../shipment.json';
 import '../components/header/header.css';
 
 const Layout = () => {
@@ -21,7 +21,7 @@ const Layout = () => {
                 {
                   Shipment && Shipment.map(shipment => {
                     return (
-                      <p key={shipment.id}><Link to={shipment.name}>{shipment.name}</Link></p>
+                      <p key={shipment.id}><Link to={`/${shipment.id}`}>{shipment.name}</Link></p>
                     )
                   })
                 }
