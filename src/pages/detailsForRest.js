@@ -1,7 +1,9 @@
 import React from 'react';
 import { Outlet } from "react-router-dom";
+import Stack from './stack';
 
 const Detailsforrest = ({shipment}) => {
+    let stack = <Stack />
     return (
         <>
             <div>
@@ -29,6 +31,7 @@ const Detailsforrest = ({shipment}) => {
             </div>
         <Outlet />
 
+        {stack}
         </>
     )
 }
