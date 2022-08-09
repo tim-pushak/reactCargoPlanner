@@ -38,6 +38,38 @@ li {
 }
 
 
+.btnInLayout {
+  position: absolute;
+  left: 79%;
+  top: 3%;
+}
+
+.saveBtnRest {
+  position: absolute;
+  padding: 6px 26px;
+  top: 3%;
+  left: 88%;
+  height: 50px;
+  
+  background-color: rgb(3, 46, 175);
+  color: #fff;
+  border: 2px solid rgb(24, 56, 153);
+}
+
+.saveBtnRest:hover {
+  background-color:rgb(16, 66, 216);
+  color: #fff;
+  border-color: #fff;
+  transition: 0.2s;
+}
+.saveBtnRest:active {
+  background-color: royalblue;
+  border-color: #000;
+  color: #000;
+  transition: 0.1s;
+}
+
+
 
 /* CONTAINER */
 
@@ -81,14 +113,14 @@ li {
 /* MEDIA */
 
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1240px) {
   .searchbar_input {
       width: 300px;
       padding: 10px;
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   .searchbar_input {
       width: 250px;
       padding: 10px;
@@ -108,3 +140,16 @@ li {
       font-size: 12px;
   }
 }
+
+@media screen and (max-width: 1140px) {
+  .saveBtnRest {
+    left: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .saveBtnRest {
+    left: 80%;
+    top: 10%;
+  }
+}
+

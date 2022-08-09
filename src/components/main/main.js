@@ -1,8 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Shipment from '../../shipment.json';
-/* 
-import Layout from '../../pages/layout'; */
+
 import Detailsforrest from '../../pages/detailsForRest';
 import Layout from '../../pages/layout';
 /* import Home from '../../pages/oldPages/home';
@@ -12,6 +11,8 @@ import ExxonMobil from '../../pages/oldPages/exxonMobil';
 import Stack from '../../pages/stack'; */
 
 const Main = () => {
+    
+
     let nav = 
         <section className="scrollBar2 companies react_wrapper">
             

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Outlet } from "react-router-dom";
-import Stack from './stack';
+/* import Stack from './stack'; */
 
 const Detailsforrest = ({shipment}) => {
-    let stack = <Stack />
+    /* let stack = <Stack /> */
+    let saveBtnRest = <button className="saveBtnRest btns">Save</button>;
     return (
         <>
             <div>
@@ -26,12 +27,15 @@ const Detailsforrest = ({shipment}) => {
                             <input type="text" defaultValue={shipment.boxes}></input>
                         </div>
                     </section>
+ 
+                    
 
                 </main>
             </div>
         <Outlet />
 
-        {stack}
+        {/* {stack} */}
+        { saveBtnRest }
         </>
     )
 }
