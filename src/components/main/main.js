@@ -27,7 +27,7 @@ const Main = () => {
                         Shipment && Shipment.map(shipment => {
                             return (
                                 <>
-                                    <Route path={`/${shipment.id}`} element={<Detailsforrest shipment={shipment} />} /> 
+                                    <Route path={`/${shipment.id}`} element={<Detailsforrest data={shipment} />} /> 
                                 </>
                             )
                         })

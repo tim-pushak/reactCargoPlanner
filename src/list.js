@@ -1,35 +1,27 @@
-import { React, useState } from 'react'
+import { React } from 'react';
 import data from './shipment.json';
 
-function List(props) {
-    {/* <BrowserRouter>
-                        <Routes>
-                            <Route path="/" element={<Layout />}>
-                                {/* <Route index element={<Home />} /> */}
-                                {/* <Route path="walmart" element={<Walmart />} />
-                                <Route path="exxonMobil" element={<ExxonMobil />} />
-                                <Route path="apple" element={<Apple />} /> */}
-                           /*  {
-                                Shipment && Shipment.map(shipment => {
-                                    return (
-                                        <>
-                                            <Route path={`/${shipment.id}`} element={<Detailsforrest shipment={shipment} />} /> 
-                                        </>
-                                    )
-                                })
-                            }
-                            </Route>
-                        </Routes>
-                    </BrowserRouter> */
-    return (
+function List (props) {
+    const filteredData = data.filter((el) => {
+        //if no input the return the original
+        if (props.input === '') {
+            return el;
+        }
+        //return the item which contains the user input
+        else {
+            return el.name.toLowerCase().includes(props.input)
+        }
+    }) 
 
-        <ul>
-            {data.map((item) => (
-                <li key={item.id}>{item.name}</li>
-            ))}
-        </ul> 
-    
-    )
+    return (
+        <section className="scrollBar2 companies react_wrapper">
+            <ul>
+                {filteredData.map((item) => (
+                    <li key={item.id}>{item.name}</li>
+                ))}
+            </ul>
+        </section>    
+    ) 
 }
 
 
