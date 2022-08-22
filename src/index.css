@@ -29,11 +29,11 @@ li {
   flex-direction: row;
 }
 
-.linksjson {
+.linksjsonActive {
   display: none;
 }
 
-.linksjsonActive {
+.linksjson {
   display: block;
 }
 

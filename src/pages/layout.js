@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { Outlet, Link } from "react-router-dom";
 import Shipment from '../shipment.json';
 import '../components/header/header.css';
-import Singleli from './singleLi';
 
 const Layout = (props) => {  
   const [isActive, setActive] = useState("false");
 
   const handleToggle = () => {
     setActive(!isActive);
+    localStorage.clear();
   };
 
   const filteredData = Shipment.filter((el) => {
@@ -22,12 +22,19 @@ const Layout = (props) => {
       }
   })
 
-  let loadBTN = <button onClick={handleToggle} className="load_btn btns btnInLayout">Load</button>;
+  const saveLinkLocal = () => {
+    localStorage.setItem();
+  }
+
+  
+
+  let loadBTN = <button onClick={handleToggle} id="loadRemove" className="load_btn btns btnInLayout">Load</button>;
+
   let links = 
         <section>
           <nav className="scrollBar1 companies">
             <ul>
-              <Singleli />
+              {/* <Singleli /> */}
                { loadBTN }
               
               <li className={isActive ? "linksjsonActive" : "linksjson"}>
